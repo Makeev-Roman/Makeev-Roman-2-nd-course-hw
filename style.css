@@ -89,9 +89,10 @@ body {
   margin: 128px 0;
   display: flex;
   align-items: flex-end;
+  text-decoration: none;
 }
 .game-box__item:hover {
-  border: 3px solid #44D2FF;
+  outline: 3px solid #44D2FF;
   border-radius: 16px;
   box-sizing: border-box;
 }
