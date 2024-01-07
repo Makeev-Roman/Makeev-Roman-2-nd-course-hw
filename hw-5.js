@@ -1,4 +1,4 @@
-/*//Задание 1
+//Задание 1
 let lesserNumber = function (a, b) {
     if (a <= b) {
         return a
@@ -38,8 +38,7 @@ let age = Number(prompt(`Сколько тебе лет?`))
 function ageVerification(age) {
     if (age < 0) {
         alert(`Вы ввели не правильное значение!`)
-    }
-    else if (age > 0 && age <= 12 ) {
+    } else if (age > 0 && age <= 12 ) {
         alert(`Привет Друг!`)
     } else {
         alert(`Добро пожаловать!`)
@@ -72,7 +71,7 @@ function verificationUserNum(userNum) {
     }
 }
 verificationUserNum(userNum);
-*/
+
 //Задание 7
 function getArea() {
     area = this.radius ** 2 * Math.PI;

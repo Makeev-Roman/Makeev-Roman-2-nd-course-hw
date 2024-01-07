@@ -20,6 +20,7 @@ body {
     height: 1024px;
     background-image: url(./img/backgr1.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main__title {
@@ -68,8 +69,6 @@ body {
 
 .secondary {
     height: 556px;
-    background-image: url(./img/backgr2.jpg);
-    background-repeat: no-repeat;
     &__seasons {
         height: 800px;
     }
@@ -129,7 +128,7 @@ body {
     display: flex;
     margin-top: 233px;
     &__info {
-        padding-right: 130px;
+        margin-right: 130px;
     }
     &__title {
         color: #FFF;
@@ -165,6 +164,9 @@ body {
         &:hover {
             background: #EB443F;
         }
+    }
+    &__mobile {
+        display: none;
     }
 }
 

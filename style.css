@@ -17,6 +17,7 @@ body {
   height: 1024px;
   background-image: url(./img/backgr1.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main__title {
@@ -65,8 +66,6 @@ body {
 
 .secondary {
   height: 556px;
-  background-image: url(./img/backgr2.jpg);
-  background-repeat: no-repeat;
 }
 .secondary__seasons {
   height: 800px;
@@ -127,7 +126,7 @@ body {
   margin-top: 233px;
 }
 .game-block__info {
-  padding-right: 130px;
+  margin-right: 130px;
 }
 .game-block__title {
   color: #FFF;
@@ -164,6 +163,9 @@ body {
 .game-block__button:hover {
   background: #EB443F;
 }
+.game-block__mobile {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .center {
@@ -199,9 +201,6 @@ body {
   }
   .secondary {
     height: 1220px;
-    background-image: url(./img/mobfon2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
   }
   .game-box {
     display: grid;
@@ -227,5 +226,30 @@ body {
   .game-box__item_3 {
     background-image: url(./img/mobitemgame3.png);
     margin-bottom: 128px;
+  }
+  .game-block {
+    flex-direction: column;
+  }
+  .game-block__info {
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .game-block__title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .game-block__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px; /* 157.143% */
+  }
+  .game-block__img {
+    display: none;
+  }
+  .game-block__mobile {
+    display: block;
+    padding-top: 64px;
   }
 }/*# sourceMappingURL=style.css.map */
