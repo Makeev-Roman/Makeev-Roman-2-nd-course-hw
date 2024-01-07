@@ -68,6 +68,9 @@ body {
   background-image: url(./img/backgr2.jpg);
   background-repeat: no-repeat;
 }
+.secondary__seasons {
+  height: 800px;
+}
 
 .game-box {
   display: grid;
@@ -117,6 +120,49 @@ body {
   background-image: url(./img/game3.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.game-block {
+  display: flex;
+  margin-top: 233px;
+}
+.game-block__info {
+  padding-right: 130px;
+}
+.game-block__title {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 32px;
+}
+.game-block__text {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  margin-top: 32px;
+}
+.game-block__button {
+  width: 234px;
+  height: 48px;
+  margin-top: 32px;
+  background: #9C0332;
+  border: none;
+  border-radius: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.game-block__button:hover {
+  background: #EB443F;
 }
 
 @media (max-width: 768px) {
