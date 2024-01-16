@@ -13,9 +13,9 @@ const num = Number(prompt(`Введи число`))
 
 function parityIsOdd (num) {
     if (num % 2 === 0) {
-        alert(`Число четное`)
+        return alert(`Число четное`)
     } else {
-        alert(`Число нечетное`)
+        return alert(`Число нечетное`)
     }
 }
 parityIsOdd(num)
@@ -51,23 +51,23 @@ let oneNum = (prompt(`Введи перовое число`))
 let whoNum = (prompt(`Введи второе число`))
 
 function checkingDataType(oneNum, whoNum) {
-    if (isNaN(oneNum) === false && isNaN(whoNum) === false) {
-        console.log(oneNum * whoNum);
+    if (isNaN(oneNum) && isNaN(whoNum)) {
+        return console.log(`Одно или оба значения не являются числом`)
     } else {
-        return console.log(`Одно или оба значения не являются числом`);
+        return (oneNum * whoNum);
     }
 }
-checkingDataType(oneNum, whoNum)
+console.log(checkingDataType(oneNum, whoNum))
 
 
 //Задание 6
 let userNum = Number(prompt(`Запрашиваю число для задания №6`))
 function verificationUserNum(userNum) {
-    if (isNaN(userNum) === false) {
+    if (isNaN(userNum)) {
+        return alert(`Переданный параметр не является числом`)
+    } else {
         let valueСube = userNum ** 3;
         return alert(`${userNum} в кубе ровняется ${valueСube}`)
-    } else {
-        alert(`Переданный параметр не является числом`)
     }
 }
 verificationUserNum(userNum);
