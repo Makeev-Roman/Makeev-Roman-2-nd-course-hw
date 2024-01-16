@@ -20,6 +20,7 @@ body {
     height: 1024px;
     background-image: url(./img/backgr1.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main__title {
@@ -68,8 +69,9 @@ body {
 
 .secondary {
     height: 556px;
-    background-image: url(./img/backgr2.jpg);
-    background-repeat: no-repeat;
+    &__seasons {
+        height: 800px;
+    }
 }
 
 .game-box {
@@ -91,8 +93,9 @@ body {
     margin: 128px 0;
     display: flex;
     align-items: flex-end;
+    text-decoration: none;
     &:hover {
-        border: 3px solid #44D2FF;
+        outline: 3px solid #44D2FF;
         border-radius: 16px;
         box-sizing: border-box;
     }
@@ -119,6 +122,52 @@ body {
     background-image: url(./img/game3.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.game-block {
+    display: flex;
+    margin-top: 233px;
+    &__info {
+        margin-right: 130px;
+    }
+    &__title {
+        color: #FFF;
+        font-family: 'Montserrat';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 32px;
+    }
+    &__text {
+        color: #FFF;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        margin-top: 32px;
+    }
+    &__button {
+        width: 234px;
+        height: 48px;
+        margin-top: 32px;
+        background: #9C0332;
+        border: none;
+        border-radius: 30px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        &:hover {
+            background: #EB443F;
+        }
+    }
+    &__mobile {
+        display: none;
+    }
 }
 
 @import 'mobile';
