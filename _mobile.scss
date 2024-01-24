@@ -32,9 +32,7 @@
     }
     .secondary {
         height: 1220px;
-        background-image: url(./img/mobfon2.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
+        
     }
     .game-box {
         display: grid;
@@ -59,7 +57,39 @@
             background-image: url(./img/mobitemgame3.png);
             margin-bottom: 128px;
             }
-        }   
+        }
+    }
+    .block-with-game {
+        height: 654px;
+    }
+    .game-block {
+        flex-direction: column;
+        &__info {
+            margin-right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            &_two {
+                margin: 0;
+            }
+        }
+        &__title {
+            font-size: 32px;
+            text-align: center;
+        }
+        &__text {
+            text-align: center;          
+            font-size: 14px;
+            line-height: 22px; /* 157.143% */
+        }
+        &__img {
+            display: none;
+        }
+        &__mobile {
+            display: block;
+            padding-top: 64px;
+        }
+        
     }
     
 }
