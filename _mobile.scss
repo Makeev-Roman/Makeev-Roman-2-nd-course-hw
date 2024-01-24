@@ -59,6 +59,9 @@
             }
         }
     }
+    .block-with-game {
+        height: 654px;
+    }
     .game-block {
         flex-direction: column;
         &__info {
@@ -66,6 +69,9 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            &_two {
+                margin: 0;
+            }
         }
         &__title {
             font-size: 32px;

@@ -1,6 +1,6 @@
-let month = Number(prompt(`Введи номер месяца от 1 до 12`));
+function seasons() {
+    let month = Number(prompt(`Введи номер месяца от 1 до 12`));
 
-function seasons(month) {
     if (isNaN(month) === true) {
         alert(`Ай ай ай, ты шалишь! Я так не играю!`)
     } else if (month === 1 || month === 2 || month === 12) {
@@ -15,4 +15,20 @@ function seasons(month) {
         alert(`Ай ай ай, ты шалишь! Я так не играю!`)
     }
 }
-seasons(month);
+
+function riddle() {
+    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    list = list.sort(() => Math.random() - 0.5);
+    alert(list);
+    let questionOne = prompt(`Чему равнялся первый элемент массива?`)
+    let questionTwo = prompt(`Чему равнялся последний элемент массива?`)
+    questionOne = questionOne.toLowerCase()
+    questionTwo = questionTwo.toLowerCase()
+    if (list[0].toLowerCase() === questionOne.toLowerCase() && list[list.length - 1].toLowerCase() === questionTwo) {
+        alert(`Поздравляю! Ты победил!`)
+    } else if (list[0].toLowerCase() === questionOne.toLowerCase() || list[list.length - 1].toLowerCase() === questionTwo) {
+        alert(`Вы были близки к победе!`)
+    } else {
+        alert(`Проиграл!`)
+    }
+}

@@ -1,4 +1,4 @@
-/*//Задание 1
+//Задание 1
 const arr = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < arr.length; i++) {
 	if (arr[i] == 10) break;
@@ -8,8 +8,8 @@ for (let i = 0; i < arr.length; i++) {
 //Задание 2
 const arrTask2 = [1, 5, 4, 10, 0, 3];
 alert(`Индекс числа 4 в массиве второго задания = ${arrTask2.indexOf(4)}`);
-/*использовал alert просто для разнообразия и что бы проверить 
-работает ли это так же как с переменной
+//использовал alert просто для разнообразия и что бы проверить 
+//работает ли это так же как с переменной
 
 //Задание 3
 const arrTask3 = [1, 3, 5, 10, 20];
@@ -57,7 +57,7 @@ const arrTask9 = [[1, 2, 3,],[4, 5, 6]];
 
 let flatArrTask9 = arrTask9.flat();
 console.log(flatArrTask9);
-*/
+
 //Задание 10
 const arrTask10 = [1, 3, 5, 7, 9, 2, 4, 8, 10]
 for (let i = 0; i < arrTask10.length - 1; i++) {

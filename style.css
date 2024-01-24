@@ -67,9 +67,6 @@ body {
 .secondary {
   height: 556px;
 }
-.secondary__seasons {
-  height: 800px;
-}
 
 .game-box {
   display: grid;
@@ -103,30 +100,37 @@ body {
   padding: 0 0 32px 32px;
 }
 
+.game-box__item {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .game-box__item_1 {
   background-image: url(./img/game1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-
 .game-box__item_2 {
   background-image: url(./img/game2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-
 .game-box__item_3 {
   background-image: url(./img/game3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.block-with-game {
+  height: 800px;
+  display: flex;
+  align-items: center;
 }
 
 .game-block {
   display: flex;
-  margin-top: 233px;
+}
+.game-block_two {
+  flex-direction: row-reverse;
 }
 .game-block__info {
   margin-right: 130px;
+}
+.game-block__info_two {
+  margin: 0 0 0 130px;
 }
 .game-block__title {
   color: #FFF;
@@ -142,7 +146,7 @@ body {
   font-family: "Montserrat";
   font-size: 18px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 32px;
   margin-top: 32px;
 }
@@ -227,6 +231,9 @@ body {
     background-image: url(./img/mobitemgame3.png);
     margin-bottom: 128px;
   }
+  .block-with-game {
+    height: 654px;
+  }
   .game-block {
     flex-direction: column;
   }
@@ -235,6 +242,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .game-block__info_two {
+    margin: 0;
   }
   .game-block__title {
     font-size: 32px;
