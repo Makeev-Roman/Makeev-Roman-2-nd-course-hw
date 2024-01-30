@@ -55,7 +55,7 @@ function getRandomArrNumbers(maxNumber) {
     const randomArray = [];
 
     for (let i = 0; i < arrayLength; i++) {
-        const randomNumber = Math.round(Math.random() * (maxNumber + 1));
+        const randomNumber = Math.floor(Math.random() * (maxNumber + 1));
         randomArray.push(randomNumber);
     }
 
