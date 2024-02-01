@@ -68,3 +68,53 @@ return rootSq;
 }
 
 console.log(nearestSq(111))
+
+//Задание 4
+function solution(str){
+    return str.split``.reverse().join`` 
+}
+console.log(solution(`World`))
+
+//Задание 5
+function addLength(str) {
+    let arrStr = str.split(` `);
+    return arrStr.map(arrStr => `${arrStr} ${arrStr.length}`)
+}
+console.log(addLength(`Ghbf fds ff`));
+
+//Задание 6
+function mango(quantity, price){
+    return quantity * price - Math.floor(quantity/3) * price
+}
+console.log(mango(4, 3))
+
+//Задание 7
+function litres(time) {
+    return Math.floor(time * 1/2)
+}
+console.log(litres(3))
+
+//Задание 8
+function invert(array) {
+    return array.map(el => -el);
+}
+console.log(invert([1,-2,3,4,5]))
+
+//Задание 9
+function powersOfTwo(n){
+    let i = 0
+    arr = []
+    while (i <= n) {
+        arr.push(Math.pow(2, i))
+        i++
+
+    }
+    return arr
+}
+console.log(powersOfTwo(1))
+
+//Задание 10
+function grow(x){
+    return x.reduce((i, el) => i * el);
+}
+console.log(grow([1, 2, 3, 4]))
