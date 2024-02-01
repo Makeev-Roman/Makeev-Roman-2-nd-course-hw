@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Homework1</title>
+    <script src="./seasons.js" defer></script>
 </head>
 
 <body>
@@ -35,6 +36,41 @@
             <a href="#" class="game-box__item game-box__item_3">
                 <p class="game-box__text">Игра 3</p>
             </a>
+        </div>
+    </section>
+    <section class="block-with-game center">
+        <div class="game-block">
+            <div class="game-block__info">
+                <h2 class="game-block__title">Времена года!</h2>
+                <p class="game-block__text">Нажмите кнопку играть, введите номер месяца
+                    (от 1 до 12) и вы узнаете к какому времени
+                    года он относится
+                </p>
+                <button class="game-block__button" onclick="seasons()">Играть</button>
+            </div>
+            <div class="game-block__img">
+                <img src="./img/game-block1.svg" alt="картинка первой игры">
+            </div>
+            <div class="game-block__mobile">
+                <img src="./img/game-block-mobile.svg" alt="картинка первой игры">
+            </div>
+        </div>
+    </section>
+    <section class="block-with-game center">
+        <div class="game-block game-block_two">
+            <div class="game-block__info game-block__info_two">
+                <h2 class="game-block__title">Запомни слова</h2>
+                <p class="game-block__text">При нажатии на кнопку играть, вы увидите 
+                    несколько слов, которые вам необходимо запомнить.
+                </p>
+                <button class="game-block__button" onclick="riddle()">Играть</button>
+            </div>
+            <div class="game-block__img">
+                <img src="./img/game-block2.svg" alt="картинка второй игры">
+            </div>
+            <div class="game-block__mobile">
+                <img src="./img/game-block-mobile2.svg" alt="картинка второй игры">
+            </div>
         </div>
     </section>
 </body>

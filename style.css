@@ -17,6 +17,7 @@ body {
   height: 1024px;
   background-image: url(./img/backgr1.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main__title {
@@ -65,8 +66,6 @@ body {
 
 .secondary {
   height: 556px;
-  background-image: url(./img/backgr2.jpg);
-  background-repeat: no-repeat;
 }
 
 .game-box {
@@ -89,9 +88,10 @@ body {
   margin: 128px 0;
   display: flex;
   align-items: flex-end;
+  text-decoration: none;
 }
 .game-box__item:hover {
-  border: 3px solid #44D2FF;
+  outline: 3px solid #44D2FF;
   border-radius: 16px;
   box-sizing: border-box;
 }
@@ -100,22 +100,75 @@ body {
   padding: 0 0 32px 32px;
 }
 
+.game-box__item {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .game-box__item_1 {
   background-image: url(./img/game1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-
 .game-box__item_2 {
   background-image: url(./img/game2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-
 .game-box__item_3 {
   background-image: url(./img/game3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.block-with-game {
+  height: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.game-block {
+  display: flex;
+}
+.game-block_two {
+  flex-direction: row-reverse;
+}
+.game-block__info {
+  margin-right: 130px;
+}
+.game-block__info_two {
+  margin: 0 0 0 130px;
+}
+.game-block__title {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 32px;
+}
+.game-block__text {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 32px;
+}
+.game-block__button {
+  width: 234px;
+  height: 48px;
+  margin-top: 32px;
+  background: #9C0332;
+  border: none;
+  border-radius: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.game-block__button:hover {
+  background: #EB443F;
+}
+.game-block__mobile {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -152,9 +205,6 @@ body {
   }
   .secondary {
     height: 1220px;
-    background-image: url(./img/mobfon2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
   }
   .game-box {
     display: grid;
@@ -180,5 +230,36 @@ body {
   .game-box__item_3 {
     background-image: url(./img/mobitemgame3.png);
     margin-bottom: 128px;
+  }
+  .block-with-game {
+    height: 654px;
+  }
+  .game-block {
+    flex-direction: column;
+  }
+  .game-block__info {
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .game-block__info_two {
+    margin: 0;
+  }
+  .game-block__title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .game-block__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px; /* 157.143% */
+  }
+  .game-block__img {
+    display: none;
+  }
+  .game-block__mobile {
+    display: block;
+    padding-top: 64px;
   }
 }/*# sourceMappingURL=style.css.map */
