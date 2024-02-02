@@ -118,3 +118,51 @@ function grow(x){
     return x.reduce((i, el) => i * el);
 }
 console.log(grow([1, 2, 3, 4]))
+
+
+//Пример про область видимости var и let
+   
+function example() {
+    if (true) {
+      var varVariable = `Я var`;
+      let letVariable = `Я let`;
+      console.log(`Внутри блока if:`);
+      console.log(varVariable); // varVariable видна вне блока if
+      console.log(letVariable); // letVariable видна только внутри блока if
+    }
+  
+    console.log(`Вне блока if:`);
+    console.log(varVariable); // varVariable видна, так как var имеет функциональную область видимости
+    try {
+        console.log(letVariable); // Ошибка: letVariable не определена вне блока if
+    } catch (error) {
+        console.error(error.message);
+    }
+}
+example();
+
+console.log(`Вне функции example:`);
+  
+try {
+    console.log(varVariable)
+    console.log(letVariable); // Ошибка: letVariable не определена вне блока if
+} catch (error) {
+    console.error(error.message);
+}
+
+// пример со свойстом поднятия hoisting у var:
+function newExample() {
+    
+    let foo = "Я переменная с var";
+    console.log(foo); // "Я переменная с var"
+  }
+  
+newExample();
+
+/*Вывод: 
+Несмотря на возможность поднятия и глобальную область видимости, использование var 
+стало менее предпочтительным в современном JavaScript, и часто рекомендуется использовать 
+let и const, которые предоставляют блочную область видимости и более предсказуемое поведение.
+
+let и const не только обеспечивают более предсказуемое поведение, но и более безопасную область видимости.
+const еще и предоставляет дополнительные гарантии по неизменяемости значений.*/
